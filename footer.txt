@@ -1,0 +1,5 @@
+
+
+document.write('<footer class="text-center p-3" style="font-family:Arial; font-size: small;"><b>Copywright &copy; 2020 Krisha</b></footer>')
+
+

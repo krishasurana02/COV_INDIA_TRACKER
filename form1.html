@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <title>ASSESS FORM</title>
+    <meta charset="utf-8">
+    <!--If you want your bootstrap styled website to be responsive on mobile then add the following meta tag to your <head>  element, above the <title>  tag:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- include bootstrap cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- include jquery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--include popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <script src="https:////kit.fontawesome.com/1c360d4082.js" crossorigin="anonymous"></script>
+   
+  </head>
+  <body style="padding-top: 40px; background: url(./images/covid_bg.jpg); background-repeat: no-repeat;
+   background-position: center;
+  background-size: cover;">
+  	<script language="javascript" type="text/javascript" 
+  src="header.txt"></script>
+  
+  <div class="container rounded mt-5 mr-0 pr-0" >
+      <div class="row m-1" style="padding-left: 150px;">
+
+      <div class="col-md-6 m-auto" >
+      <h1 class="text-center display-3 my-4 " style="font-family: Georgia; background: rgba(200,200,200,0.5);"> <strong>Form</strong> </h1>
+
+         
+          <!-- Age -->
+          <div class="form-data">
+            <p class="font-weight-bold my-1">What is your AGE: </p>
+            <input type="number" id="age" name="age " min=1 placeholder="age" >
+            
+          </div>
+          <!-- Gender -->
+          <div class="form-group my-3">
+            <p class="font-weight-bold my-1">What is your GENDER: </p>
+            <!-- Male -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="male" name="gender" class="custom-control-input" >
+              <label class="custom-control-label" for="male">Male</label>
+            </div>
+            <!-- Female -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="female" name="gender" class="custom-control-input" >
+              <label class="custom-control-label" for="female">Female</label>
+            </div>
+            <!-- Other -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="other" name="gender" class="custom-control-input" >
+              <label class="custom-control-label" for="other">Other</label>
+            </div>
+          </div>
+          <!-- health problems history-->
+          <div class="form-group my-3">
+             <p class="font-weight-bold my-1">Do you currently have any of these health conditions?   <strong><span style="color: red">*</span></strong></p>
+                <!-- asthma -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="asthma" name="history" value="1">
+                  <label class="custom-control-label" for="asthma">Asthma</label>
+                </div>
+                <!-- cancer -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="cancer" name="history" value="1">
+                  <label class="custom-control-label" for="cancer">Cancer</label>
+                </div>
+                <!-- chronic_lung_disease -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="chronic_lung_disease" name="history" value="1">
+                  <label class="custom-control-label" for="chronic_lung_disease">Chronic Lung Disease</label>
+                </div>
+                <!-- hypertension -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="hypertension" name="history" value="1">
+                  <label class="custom-control-label" for="hypertension">Hypertension</label>
+                </div>
+                <!-- diabetes -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="diabetes" name="history" value="1">
+                  <label class="custom-control-label" for="diabetes">Diabetes</label>
+                </div>
+                <!-- heart_diseases -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="heart_diseases" name="history" value="1">
+                  <label class="custom-control-label" for="heart_diseases">Heart Diseases</label>
+                </div>
+                <!-- none -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="none" name="history" value="1">
+                  <label class="custom-control-label" for="none">None</label>
+                </div>
+          </div>
+          <!-- close contact with a COVID-19 patient-->
+          <div class="form-group my-3">
+            <p class="font-weight-bold my-1">Have you or someone in your family staying with you came in close contact with a laboratory confirmed COVID-19 patient in last 14 days?   <strong><span style="color: red">*</span></strong> </p>
+            <!-- YES -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="close_contact_yes" name="close_contact" class="custom-control-input" value="true" >
+              <label class="custom-control-label" for="close_contact_yes">YES</label>
+            </div>
+            <!-- NO -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="close_contact_no" name="close_contact" class="custom-control-input" value="false" >
+              <label class="custom-control-label" for="close_contact_no">NO</label>
+            </div>
+         </div>
+         <!-- you exposed in public services-->
+         <div class="form-group my-3">
+            <p class="font-weight-bold my-1">Do you currently working for essential services in public exposed places(such as hospitals,retail outlets,delivery services)?   <strong><span style="color: red">*</span></strong> </p>
+            <!-- YES -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="you_service_yes" name="you_service" class="custom-control-input" value="true" >
+              <label class="custom-control-label" for="you_service_yes">YES</label>
+            </div>
+            <!-- NO -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="you_service_no" name="you_service" class="custom-control-input" value="false">
+              <label class="custom-control-label" for="you_service_no">NO</label>
+            </div>
+         </div>
+         <!-- someone around you is exposed in public services-->
+         <div class="form-group my-3">
+            <p class="font-weight-bold my-1">Is someone in your family staying with you currently working for essential services in public exposed places(such as hospitals,retail outlets,delivery services)?   <strong><span style="color: red">*</span></strong> </p>
+            <!-- YES -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="someone_service_yes" name="someone_service" class="custom-control-input" value="true" >
+              <label class="custom-control-label" for="someone_service_yes">YES</label>
+            </div>
+            <!-- NO -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="someone_service_no" name="someone_service" class="custom-control-input" value="false">
+              <label class="custom-control-label" for="someone_service_no">NO</label>
+            </div>
+          </div>
+        <!--travel-->
+        <div class="form-group my-3">
+            <p class="font-weight-bold my-1">Have you traveled anywhere in ternationally in last 28-45 days?   <strong><span style="color: red">*</span></strong> </p>
+            <!-- YES -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="travel_yes" name="travel" class="custom-control-input" value="true" >
+              <label class="custom-control-label" for="travel_yes">YES</label>
+            </div>
+            <!-- NO -->
+            <div class="custom-control custom-radio">
+              <input type="radio" id="travel_no" name="travel" class="custom-control-input" value="false">
+              <label class="custom-control-label" for="travel_no">NO</label>
+            </div>
+        </div>
+        <!-- health symptoms-->
+          <div class="form-group my-3">
+             <p class="font-weight-bold my-1">Are you having one or more of the following symptoms?   <strong><span style="color: red">*</span></strong> </p>
+              <!-- Fever -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="fever" name="symptoms" value="1">
+                <label class="custom-control-label" for="fever">Fever</label>
+              </div>
+              <!-- Dry Cough -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="dry_Cough" name="symptoms" value="1">
+                <label class="custom-control-label" for="dry_Cough">Dry Cough</label>
+              </div>
+              <!-- Short breath -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="short_breath" name="symptoms" value="1">
+                <label class="custom-control-label" for="short_breath">Feeling shortness of breath</label>
+              </div>
+              <!-- Sore throat -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="sore_throat" name="symptoms" value="1">
+                <label class="custom-control-label" for="sore_throat">Sore throat</label>
+              </div>
+              <!-- Headache -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="headache" name="symptoms" value="1">
+                <label class="custom-control-label" for="headache">Headache</label>
+              </div>
+              <!-- running_nose -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="running_nose" name="symptoms" value="1">
+                <label class="custom-control-label" for="running_nose">Running Nose</label>
+              </div>
+              <!-- hoarse_voice -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="hoarse_voice" name="symptoms" value="1">
+                <label class="custom-control-label" for="hoarse_voice">Hoarseness in voice</label>
+              </div>
+              <!-- None -->
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="none1" name="symptoms" value="0">
+                <label class="custom-control-label" for="none1">None</label>
+              </div>
+          </div>    
+          <input type="submit" value="Submit" class="btn btn-danger btn-block m-3" onclick="displayValue()"> 
+        <!-- </form> -->
+          <p><strong> <span style="color: red">*</span> Required Fields</strong> </p>
+        
+      </div>
+
+    </div>
+ 
+	<!-- ALERT  -->
+  </div>
+    <div class="alert h4 m-3 text-center " role="alert" id="display_alert"></div>
+
+
+<script language="javascript" type="text/javascript" 
+  src="footer.txt"></script>
+<script type="text/javascript" src="form1.js"></script>
+  </body>
+</html>

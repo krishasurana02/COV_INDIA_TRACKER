@@ -1,0 +1,17 @@
+
+.container 
+{	
+	position: center;
+	
+}
+#virus
+{	width: 100%;
+	height: auto; 
+	border: 3px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+body{
+	padding-top: 40px;
+}
